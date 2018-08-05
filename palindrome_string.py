@@ -6,3 +6,4 @@ def palstr():
     print(str +"is palindrome")
   else:
     print("False")
+palstr()
