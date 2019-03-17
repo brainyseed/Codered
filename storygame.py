@@ -17,3 +17,17 @@ def fill_in_the_blanks(noun, verb, adjective):
 except for {2}, old Aunt Polly. She never {1}, not even when that {0} came to
 town.".format(noun, verb, adjective)
  return story
+def print_story(story):
+ """Prints a story."""
+ print()
+ print('Here is the story you made. Enjoy!')
+ print()
+ print(story)
+def create_story():
+ """Creates a story by collecting the input and printing a finished story."""
+ noun = get_word('noun')
+ verb = get_word('verb')
+ adjective = get_word('adjective')
+ the_story = fill_in_the_blanks(noun, verb, adjective)
+ print_story(the_story)
+create_story()
