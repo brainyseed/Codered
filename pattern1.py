@@ -11,8 +11,6 @@ def printPat(n):
             for i in range(0,n):
                 ans=ans+str(print_n)+" "
             print_n=print_n-1
-        ans=ans+"$"
-        #print("$", e)
         print_n=ori
         n=n-1
     return ans     
